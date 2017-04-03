@@ -100,6 +100,13 @@ UberTweetsCleaned = cleanTweetsAndRemoveNAs(UberTweets)
 opinion.lexicon.pos =scan('opinion-lexicon-English/positive-words.txt', what='character', comment.char=';')
 
 
+#scanning positive and negative sentiments
+opinion.lexicon.pos = scan('R/social-media-mining/data/opinion-lexicon-English/positive-words.txt',what='character', comment.char=';')
+opinion.lexicon.neg = scan('R/social-media-mining/data/opinion-lexicon-English/negative-words.txt',what='character', comment.char=';')
+#checks to insure lexicon loaded correctly
+head(opinion.lexicon.neg)
+head(opinion.lexicon.pos)
+
 
 
 
