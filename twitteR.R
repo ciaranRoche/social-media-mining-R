@@ -1,4 +1,4 @@
-#Pavages needed for twitteR
+#Packages needed for twitteR
 install.packages(c("devtools", "rjson", "bit64", "httr"))
 library(devtools)
 install_github("geoffjentry/twitteR").
@@ -95,6 +95,9 @@ MeruTweetsCleaned = cleanTweetsAndRemoveNAs(MeruTweets)
 OlaTweetsCleaned = cleanTweetsAndRemoveNAs(OlaTweets)
 TaxiForSureTweetsCleaned <- cleanTweetsAndRemoveNAs(TaxiForSureTweets)
 UberTweetsCleaned = cleanTweetsAndRemoveNAs(UberTweets)
+
+
+opinion.lexicon.pos =scan('opinion-lexicon-English/positive-words.txt', what='character', comment.char=';')
 
 
 
